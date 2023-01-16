@@ -1,0 +1,48 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: orange;
+}
+
+.additional_task {
+    font-size: 0.8rem;
+}
+
+@keyframes animatedCounter {
+
+    0% {
+        opacity: 0;
+        scale: 0.1;
+    }
+
+    30% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    70% {
+        opacity: 1;
+        scale: 1;
+    }
+
+    100% {
+        opacity: 0;
+        scale: 1.9;
+    }
+}
+
+.animatedCounter {
+    animation: animatedCounter 1s ease-in-out;
+}
