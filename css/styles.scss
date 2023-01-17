@@ -46,3 +46,37 @@ a:hover {
 .animatedCounter {
     animation: animatedCounter 1s ease-in-out;
 }
+
+@keyframes animatedCarouselOut {
+
+    0% {
+        transform: translateX(0 px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-200 px);
+        opacity: 0;
+    }
+}
+
+.animatedCarouselOut {
+    animation: animatedCarouselOut 1s ease-in-out;
+}
+
+@keyframes animatedCarouselIn {
+
+    0% {
+        // transform: translateX(200 px);
+        opacity: 0;
+    }
+
+    100% {
+        // transform: translateX(0 px);
+        opacity: 1;
+    }
+}
+
+.animatedCarouselIn {
+    animation: animatedCarouselIn 1s ease-in-out;
+}

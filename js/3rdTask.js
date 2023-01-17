@@ -13,7 +13,6 @@ window.onload = function () {
         if (counterStart <= 0) {
             alert(`Ви дочекались знижки!`);
             clearInterval(intervalID);
-            console.log(clearInterval(counter));
         }
         else {
             counterStart--;
