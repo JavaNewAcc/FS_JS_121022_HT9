@@ -2,10 +2,6 @@ html {
     font-size: 12px;
 }
 
-body {
-    height: 100vh;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -47,36 +43,47 @@ a:hover {
     animation: animatedCounter 1s ease-in-out;
 }
 
-@keyframes animatedCarouselOut {
-
-    0% {
-        transform: translateX(0 px);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-200 px);
-        opacity: 0;
-    }
+button {
+    background: none;
+    border: none;
 }
 
-.animatedCarouselOut {
-    animation: animatedCarouselOut 1s ease-in-out;
+
+.backBtnHover {
+    background: rgb(223, 181, 14);
+    background: linear-gradient(90deg, rgba(223, 181, 14, 1) 11%, rgba(255, 234, 0, 0) 100%);
+    transition: 1s;
+    opacity: 0;
 }
 
-@keyframes animatedCarouselIn {
-
-    0% {
-        // transform: translateX(200 px);
-        opacity: 0;
-    }
-
-    100% {
-        // transform: translateX(0 px);
-        opacity: 1;
-    }
+.backBtnHover:hover {
+    opacity: 1;
 }
 
-.animatedCarouselIn {
-    animation: animatedCarouselIn 1s ease-in-out;
+.frwrdBtnHover {
+    background: rgb(223, 181, 14);
+    background: linear-gradient(-90deg, rgba(223, 181, 14, 1) 11%, rgba(255, 234, 0, 0) 100%);
+    transition: 1s;
+    opacity: 0
+}
+
+.frwrdBtnHover:hover {
+    opacity: 1;
+}
+
+.modWinBg {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modWin {
+    min-width: 300px;
+    max-width: 400px;
+    position: absolute;
 }

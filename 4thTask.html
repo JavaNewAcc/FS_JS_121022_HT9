@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/4ерTask.js"></script>
+    <script src="./js/4thTask.js"></script>
 </head>
 
 <body>
@@ -26,6 +26,26 @@
             визначте розміри блоку модального вікна</p>
         <hr>
         <h2 class="text-center p-3">Result</h2>
+    </div>
+    <div class="m-3 d-flex flex-column">
+        <button class="modWinOpener btn btn-success m-auto">Open modal window</button>
+    </div>
+
+    <div class="modWinBg">
+        <div class="modWin border-secondary rounded d-flex flex-column">
+            <div class="modWinHeader rounded-top d-flex row justify-content-between m-0 bg-warning">
+                <p class="col-10 text-center align-self-center fw-bold text-uppercase pt-3">Attention!</p>
+                <button class="closeBtn col-1 btn btn-danger mt-3 mb-3 me-2 p-0">X</button>
+            </div>
+            <div class="modWinBody p-3 text-center bg-light">
+                <p class="mb-0 fs-3 fw-bold">Please press X to close this window</p>
+            </div>
+            <div class="modWinFooter rounded-bottom text-center bg-warning">
+                <p class="m-1">Grey background will also close this window</p>
+            </div>
+        </div>
+        <div class="bgClose hideElem"></div>
+
     </div>
 </body>
 
